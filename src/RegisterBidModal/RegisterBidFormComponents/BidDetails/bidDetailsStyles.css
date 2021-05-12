@@ -1,0 +1,61 @@
+.source-textfield-class {
+  width: 100%;
+  margin-right: 10px !important;
+}
+
+.destination-textfield-class {
+  width: 100%;
+}
+
+.source-textfield-class input {
+  font-weight: bold;
+}
+
+.destination-textfield-class input {
+  font-weight: bold;
+}
+
+.source-textfield-class label {
+  color: black;
+}
+
+.destination-textfield-class label {
+  color: black;
+}
+
+.carType-formControl {
+  margin: 30px 5px !important;
+  width: 100%;
+}
+
+#carType-label {
+  color: black;
+}
+
+#carType-select {
+  font-weight: bold;
+}
+
+.numberTravellers-textfield-class{
+    margin: 15px 5px !important;
+}
+
+.numberTravellers-textfield-class label{
+    color: black;
+}
+
+.numberTravellers-textfield-class input{
+    font-weight: bold;
+}
+
+.submit-bid-button{
+    font-family: inherit !important;
+    text-transform: none !important;
+    margin: 30px 5px !important;
+}
+
+@media only screen and (min-width: 1440px) {
+  .bid-form {
+    padding: 0 100px;
+  }
+}
