@@ -7,6 +7,10 @@ import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 import Button from "@material-ui/core/Button";
 
+interface BidDetailsProps{
+  step: number;
+  increaseSteps: () => void;
+}
 interface formValues {
   source: string;
   destination: string;
@@ -14,7 +18,7 @@ interface formValues {
   countTravellers: number;
 }
 
-export function BidDetails() {
+export function BidDetails(props: BidDetailsProps) {
   const initialValues: formValues = {
     source: "",
     destination: "",
@@ -27,7 +31,7 @@ export function BidDetails() {
       initialValues={initialValues}
       onSubmit={(values, { setSubmitting }) => {
         setTimeout(() => {
-          console.log("Logging in", values);
+          props.increaseSteps();
           setSubmitting(false);
         }, 500);
       }}
@@ -36,15 +40,7 @@ export function BidDetails() {
       })}
     >
       {(props) => {
-        const {
-          values,
-          touched,
-          errors,
-          isSubmitting,
-          handleChange,
-          handleBlur,
-          handleSubmit,
-        } = props;
+        const { values, isSubmitting, handleChange, handleSubmit } = props;
         return (
           <form onSubmit={handleSubmit} className="bid-form">
             <div className="form-row">
@@ -112,6 +108,7 @@ export function BidDetails() {
             </div>
             <div className="form-row">
               <Button
+                type="submit"
                 variant="contained"
                 className="submit-bid-button"
                 disabled={isSubmitting}

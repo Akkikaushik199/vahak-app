@@ -52,6 +52,7 @@
     font-family: inherit !important;
     text-transform: none !important;
     margin: 30px 5px !important;
+    background-color: #0F53FB !important;
 }
 
 @media only screen and (min-width: 1440px) {

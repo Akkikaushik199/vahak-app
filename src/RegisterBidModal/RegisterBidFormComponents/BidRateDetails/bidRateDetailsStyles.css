@@ -1,0 +1,48 @@
+.contact-textfield-class {
+    margin: 15px 5px !important;
+}
+
+.name-textfield-class {
+    margin: 15px 5px !important;
+}
+
+.contact-textfield-class input {
+  font-weight: bold;
+}
+
+.name-textfield-class input {
+  font-weight: bold;
+}
+
+.contact-textfield-class label {
+  color: black;
+}
+
+.name-textfield-class label {
+  color: black;
+}
+
+.remarks-textfield-class {
+  margin: 15px 5px !important;
+}
+
+.remarks-textfield-class label {
+  color: black;
+}
+
+.remarks-textfield-class input {
+  font-weight: bold;
+}
+
+.submit-bid-button {
+  font-family: inherit !important;
+  text-transform: none !important;
+  margin: 30px 5px !important;
+  background-color: #0f53fb !important;
+}
+
+@media only screen and (min-width: 1440px) {
+  .bid-form {
+    padding: 0 100px;
+  }
+}

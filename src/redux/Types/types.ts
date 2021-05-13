@@ -1,0 +1,3 @@
+export const STEPINCREMENT = 'STEP_INCREMENT';
+
+export const STEPDECREMENT = 'STEP_DECREMENT';
